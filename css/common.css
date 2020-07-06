@@ -16,7 +16,11 @@ img {
 
 header {
   background-color: #333333;
-  height: 5rem;
+  padding: 0.4rem 1.5rem;
+}
+
+header > h1 > .logo{
+ height:4.2rem;
 }
 
 footer {
@@ -31,7 +35,10 @@ footer p {
   margin-bottom: 0;
 }
 
-
+.head2{
+  font-size:2rem;
+  font-weight: 600;
+}
 
 .pr-ico {
   position: relative;
@@ -66,7 +73,6 @@ footer p {
   transition: .5s;
   opacity: 0.5;
 }
-
 
 .pr-name > span {
   display: inline-block;

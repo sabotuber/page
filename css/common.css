@@ -7,7 +7,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   text-size-adjust: 100%;
-  color: #333333;
+  color: #34495e;
 }
 
 img {
@@ -22,8 +22,24 @@ a:hover {
   text-decoration: underline;
 }
 
+small {
+  font-size: 1.2rem;
+  color: #c0c1c2;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+ul > li {
+  position: relative;
+  font-size: 1.6rem;
+}
+
 header {
-  background-color: #333333;
+  background-color: #34495e;
   padding: 0.4rem 1.5rem;
 }
 
@@ -35,7 +51,7 @@ footer {
   font-size: 1.2rem;
   text-align: center;
   color: #ffffff;
-  background-color: #333333;
+  background-color: #34495e;
   padding: 0.4rem 0;
 }
 
@@ -48,7 +64,7 @@ footer p {
   display: inline-block;
   border-radius: 50%;
   transition: .5s;
-  border: 0.8rem solid #333333;
+  border: 0.8rem solid #34495e;
   overflow: hidden;
   width: 20rem;
   max-width: 100%;
@@ -72,7 +88,7 @@ footer p {
 
 .pr-ico:hover::after {
   content: "@sabotuber";
-  color: #333333;
+  color: #34495e;
   transition: .5s;
   opacity: 0.5;
 }
@@ -119,10 +135,7 @@ footer p {
 
 .h-t1 > span {
   display: inline-block;
-  font-size: 2rem;
-  line-height: 3rem;
-  font-weight: 600;
-  color: #333333;
+  color: #34495e;
   position: relative;
   padding: 0 3rem;
 }
@@ -159,13 +172,55 @@ footer p {
   right: 1.8rem;
 }
 
+.h-t1 > span > span {
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+
 .h-t1 > span > span:last-child {
-  font-size: 1.6rem
+  font-size: 1.6rem;
+  line-height: 1.6rem;
 }
 
 .h-t2 {
-  font-size:1.6rem;
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   font-weight: 600;
+  border-left: 0.6rem solid #6b8a79;
+  padding-left: 0.8rem;
+}
+
+.h-t2 > span {
+  position: relative;
+}
+
+.h-t2 > span::before {
+  content: "";
+  position: absolute;
+  right: -1.6rem;
+  top: 0.4rem;
+  display: inline-block;
+  height: 1.6rem;
+  width: 0.4rem;
+  border-radius: 1rem;
+  background: #888888;
+  transform: rotate(30deg);
+}
+
+.h-t2 > span::after {
+  content: "";
+  position: absolute;
+  right: -2.4rem;
+      top: 0.4rem;
+  display: inline-block;
+  height: 1.6rem;
+  width: 0.4rem;
+  border-radius: 1rem;
+  background: #888888;
+  transform: rotate(30deg);
 }
 
 .faq-list {
@@ -212,23 +267,145 @@ footer p {
   font-weight: 600;
 }
 
+.ic-good {
+  padding-left: 2rem;
+}
+
+.ic-good::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f164";
+  display: inline-block;
+  color: #34495e;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ic-bad {
+  padding-left: 2rem;
+}
+
+.ic-bad::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f165";
+  display: inline-block;
+  color: #34495e;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ic-star {
+  padding-left: 2rem;
+}
+
+.ic-star::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f005";
+  display: inline-block;
+  color: #34495e;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.timeline {
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0.4rem;
+  height: 100%;
+  background: #6b8a79;
+  border-radius: 0.4rem;
+  left: 1rem;
+  top: 0;
+}
+
+.timeline > li {
+  position: relative;
+  padding-left: 3rem;
+  font-size: 0;
+}
+
+.timeline > li::before {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: #6b8a79;
+  border-radius: 2rem;
+  position: absolute;
+  left: 0.2rem;
+  top: 0;
+}
+
+.timeline > li::after {
+  content: "";
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background: #ffffff;
+  border-radius: 2rem;
+  position: absolute;
+  left: 0.7rem;
+  top: 0.5rem;
+}
+
+.timeline > li > time {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.timeline > li > p {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+.timeline > li > small {
+  display: inline-block;
+  width: 100%;
+}
 
 
-ul.sns-link {
+
+
+.sns-link {
   padding: 0;
   list-style: none;
   font-size: 0;
 }
 
-ul.sns-link > li {
+.sns-link > li {
   display: inline-block;
 }
 
-ul.sns-link > li:not(:last-child) {
+.sns-link > li:not(:last-child) {
   padding-right: 0.8rem;
 }
 
-ul.sns-link > li > a {
+.sns-link > li > a {
   display: inline-block;
   width: 5rem;
   height: 5rem;
@@ -241,13 +418,13 @@ ul.sns-link > li > a {
   overflow: hidden;
 }
 
-ul.sns-link > li > a:hover {
+.sns-link > li > a:hover {
   transition: .5s;
   text-decoration: none;
   color: #ffffff;
 }
 
-ul.sns-link > li > a::before {
+.sns-link > li > a::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -255,14 +432,14 @@ ul.sns-link > li > a::before {
   z-index: -1;
   left: 0;
   transition: 0.5s;
-  background: #333333;
+  background: #34495e;
 }
 
-ul.sns-link > li > a:hover:before {
+.sns-link > li > a:hover:before {
   opacity: 0;
 }
 
-ul.sns-link > li > a::after {
+.sns-link > li > a::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -271,20 +448,20 @@ ul.sns-link > li > a::after {
   left: 0;
 }
 
-ul.sns-link > li > a.ic-tw::after {
+.sns-link > li > a.ic-tw::after {
   background: linear-gradient(135deg, #13f1fc 0%, #0470dc 100%);
 }
 
-ul.sns-link > li > a.ic-yt::after {
+.sns-link > li > a.ic-yt::after {
   background: linear-gradient(135deg, #f5515f 0%, #c9293c 100%);
 }
 
-ul.sns-link > li > a.ic-gh:hover {
-  background: #333333;
+.sns-link > li > a.ic-gh:hover {
+  background: #34495e;
   opacity: 0.6;
 }
 
-ul.sns-link > li > a > i {
+.sns-link > li > a > i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -309,6 +486,8 @@ ul.sns-link > li > a > i {
   font-family: 'Impact', 'Anton', sans-serif;
 }
 
+
+
 /* sm */
 @media (min-width: 576px) {}
 
@@ -320,6 +499,15 @@ ul.sns-link > li > a > i {
 
   .pr-name > span:last-child {
     font-size: 2rem;
+  }
+
+  .timeline > li > time {
+    width: auto;
+    margin-right: 1rem;
+  }
+
+  .timeline > li > p {
+    width: auto;
   }
 }
 

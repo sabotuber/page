@@ -195,6 +195,7 @@ footer p {
 
 .h-t2 > span {
   position: relative;
+  display: inline-block;
 }
 
 .h-t2 > span::before {

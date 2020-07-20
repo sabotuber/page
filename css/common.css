@@ -215,13 +215,23 @@ footer p {
   content: "";
   position: absolute;
   right: -2.4rem;
-      top: 0.4rem;
+  top: 0.4rem;
   display: inline-block;
   height: 1.6rem;
   width: 0.4rem;
   border-radius: 1rem;
   background: #888888;
   transform: rotate(30deg);
+}
+
+.pr-table th {
+  display: inline-block;
+  width: 100%;
+}
+
+.pr-table td {
+  display: inline-block;
+  width: 100%;
 }
 
 .faq-list {
@@ -500,6 +510,25 @@ footer p {
 
   .pr-name > span:last-child {
     font-size: 2rem;
+  }
+
+  .pr-table th {
+    display: table-cell;
+    position: relative;
+    padding-right: 1.6rem;
+    width: auto;
+  }
+
+  .pr-table th::after {
+    content: "：";
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+
+  .pr-table td {
+    display: table-cell;
+    width: auto;
   }
 
   .timeline > li > time {

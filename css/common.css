@@ -224,6 +224,15 @@ footer p {
   transform: rotate(30deg);
 }
 
+.h-t3 {
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  border-left: 0.6rem solid #888888;
+  padding-left: 0.8rem;
+}
+
 .pr-table th {
   display: inline-block;
   width: 100%;

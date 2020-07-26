@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ピッタリ経験値計算機|さぼてんch</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/common.css" type="text/css" media="all">
+</head>
+
+<body>
+  <header class="mb-40">
+    <h1 class="mb-0"><img src="../img/common/logo_w.png" alt="さぼてんch" class="logo"></h1>
+  </header>
+
+  <main>
+    <article>
+      <div class="container">
+
+        <div class="row">
+          <section class="col-12 col-md-8 offset-0 offset-md-2 mb-40">
+            <h2 class="h-t1 mb-20"><span><span class="f-impact">PittariExpCalculator-</span><span>ピッタリ経験値計算機</span></span></h2>
+            <p class="mb-20">経験値タイプの入力を省きたかった。<br>一部レベルでは経験値タイプが異なる場合でも必要経験値が同じ場合があるので注意。<br>XL,L,M,S,XSの順番に優先的に使う計算の為、最小の組み合わせではない場合があるので注意。</p>
+            <table class="mb-20">
+              <tr>
+                <th>現在のレベル</th>
+                <td><input type="number" id="currentLevel" value="1"></td>
+              </tr>
+              <tr>
+                <th>目標のレベル</th>
+                <td><input type="number" id="targetLevel" value="50"></td>
+              </tr>
+              <tr>
+                <th>現在の経験値</th>
+                <td><input type="number" id="currentExp" value="0"></td>
+              </tr>
+              <tr>
+                <th>次のレベルまであと</th>
+                <td><input type="number" id="nextExp" value="8"></td>
+              </tr>
+              <tr>
+                <th>アイテム</th>
+                <td>
+                  <p class="mb-0"><input type="checkbox" name="item" checked="checked" value="1">経験アメXL</p>
+                  <p class="mb-0"><input type="checkbox" name="item" checked="checked" value="1">経験アメL</p>
+                  <p class="mb-0"><input type="checkbox" name="item" value="1">経験アメM</p>
+                  <p class="mb-0"><input type="checkbox" name="item" value="1">経験アメS</p>
+                  <p class="mb-0"><input type="checkbox" name="item" value="1">経験アメXS</p>
+                  <p class="mb-0"><input type="checkbox" name="item" checked="checked" value="1" disabled>ふしぎなアメ</p>
+                </td>
+              </tr>
+              <tr>
+                <th colspan="2"><input type="button" value="計算" id="calc-btn"></th>
+              </tr>
+            </table>
+            <p id="result" class="mb-20">ここに結果が表示されるよ</p>
+            <p class="mb-20"><a href="../">Topに戻る</a></p>
+          </section>
+
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <ul class="sns-link text-right mb-20">
+              <li><a href="https://twitter.com/sabotuber" target="_blank" class="ic-tw"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="https://www.youtube.com/channel/UCgyT1XFAdB7FXzXPkLlF7Ng?sub_confirmation=1" target="_blank" class="ic-yt"><i class="fab fa-youtube"></i></a></li>
+              <li><a href="https://github.com/sabotuber" target="_blank" class="ic-gh"><i class="fab fa-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+
+      <div class="row">
+        <div class="col-12">
+          <p>&copy;2020 仙人掌</p>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/exp_calc.js"></script>
+</body></html>

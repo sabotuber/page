@@ -1,1 +1,0 @@
-console.log("ミスってdress_upのjs書いてました");

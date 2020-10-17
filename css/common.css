@@ -196,6 +196,7 @@ footer p {
 .h-t2 > span {
   position: relative;
   display: inline-block;
+  max-width: calc(100% - 2.4rem);
 }
 
 .h-t2 > span::before {

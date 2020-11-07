@@ -38,12 +38,20 @@ ul > li {
   font-size: 1.6rem;
 }
 
+table {
+  width: 100%;
+}
+
 header {
   background-color: #34495e;
   padding: 0.4rem 1.5rem;
 }
 
 header > h1 > .logo {
+  height: 4.2rem;
+}
+
+header > h1 > a > .logo {
   height: 4.2rem;
 }
 
@@ -409,9 +417,6 @@ footer p {
   width: 100%;
 }
 
-
-
-
 .sns-link {
   padding: 0;
   list-style: none;
@@ -507,6 +512,63 @@ footer p {
   font-family: 'Impact', 'Anton', sans-serif;
 }
 
+.bm-table {
+  font-size: 1.4rem;
+}
+
+.bm-table, .bm-table th, .bm-table td {
+  border: 0.1rem solid #34495e;
+}
+
+.bm-table .partition {
+  color: #ffffff;
+  background-color: #34495e;
+}
+
+.bm-table .navigation {
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #c0c1c2;
+}
+
+.bm-table .navigation {
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #c0c1c2;
+}
+
+.bm-table .recording, .bm-table .recording td{
+  padding: 0;
+  font-size: 0;
+}
+.bm-table .recording span {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: 0.4rem;
+}
+
+.bm-table-sample-g {
+  color: #ffffff;
+  background-color: #6b8a79;
+  font-weight: 600;
+}
+
+.bm-table .is-g {
+  color: #ffffff;
+  background-color: #6b8a79;
+  font-weight: 600;
+}
+
+.bm-table-sample-y {
+  background-color: #e7ba82;
+  font-weight: 600;
+}
+
+.bm-table .is-y {
+  background-color: #e7ba82;
+  font-weight: 600;
+}
 
 
 /* sm */
@@ -556,6 +618,7 @@ footer p {
   width: 100%;
   padding-top: 56.25%;
 }
+
 .youtube iframe {
   position: absolute;
   top: 0;

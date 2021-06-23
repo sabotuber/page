@@ -1,0 +1,57 @@
+.bm-table {
+  font-size: 1.4rem;
+}
+
+.bm-table, .bm-table th, .bm-table td {
+  border: 0.1rem solid #34495e;
+}
+
+.bm-table .partition {
+  color: #ffffff;
+  background-color: #34495e;
+}
+
+.bm-table .navigation {
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #c0c1c2;
+}
+
+.bm-table .navigation {
+  font-size: 1.4rem;
+  text-align: center;
+  background-color: #c0c1c2;
+}
+
+.bm-table .recording, .bm-table .recording td{
+  padding: 0;
+  font-size: 0;
+}
+.bm-table .recording span {
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: 0.4rem;
+}
+
+.bm-table-sample-g {
+  color: #ffffff;
+  background-color: #6b8a79;
+  font-weight: 600;
+}
+
+.bm-table .is-g {
+  color: #ffffff;
+  background-color: #6b8a79;
+  font-weight: 600;
+}
+
+.bm-table-sample-y {
+  background-color: #e7ba82;
+  font-weight: 600;
+}
+
+.bm-table .is-y {
+  background-color: #e7ba82;
+  font-weight: 600;
+}
